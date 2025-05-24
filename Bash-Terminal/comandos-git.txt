@@ -1,0 +1,7 @@
+Servem para realizar o versionamento de código de pastas e arquivos de pastas na plataforma GitHub pelo Bash, CMD ou Terminal
+
+
+git clone link-do-repositorio 
+(Navegue a até a pasta desejada para clonar um repositório)
+
+
