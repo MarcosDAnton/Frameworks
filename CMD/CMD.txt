@@ -1,0 +1,12 @@
+* O que são? 
+  São as famosas telas pretas dos computadores e servidores, também conhecidos como consoles, prompts, cmd ou terminais de comando burros ou inteligentes que servem para operar o sistema operativo de um certo dispositivo dispondo o uso de interfaces gráficas complexas. 
+
+
+* Quem desenvolveu?
+
+* Fontes 
+
+ Programaria [https://www.programaria.org/o-que-e-o-terminal-ou-venha-conhecer-tela-preta/#:~:text=Basicamente%2C%20terminal%20%C3%A9%20aquela%20famosa,o%20bom%20e%20velho%20mouse.]
+
+
+ MSDOS Wikipédia [https://pt.wikipedia.org/wiki/MS-DOS]
