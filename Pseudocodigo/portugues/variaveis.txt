@@ -1,0 +1,30 @@
+Algoritmo Estrutura-de-Variavel {
+
+    real:  var-real ;
+    inteiro: var-inteiro ;
+    logico: var-logico ;
+    caractere: var-caractere ;
+
+
+    var-real = -3.14 ; 
+    var-inteiro = -1 ; 
+    var-logico = verdadeiro / falso (com base em alguma das vars ou vetor de vars e matrizes)
+    var-caractere = "texto" ;
+
+    escreva (var-real);
+
+    escreva (var-inteiro); 
+
+    escreva (var-logico);
+
+    escreva (var-caractere); 
+}
+
+===============================================================================================================
+
+Saída: 
+
+    -3.14
+    - 1
+    vardadeiro
+    texto

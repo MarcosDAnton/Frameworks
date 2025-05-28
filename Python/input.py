@@ -1,3 +1,3 @@
 
-nome = input("Qual seu nome?")
+nome = input("Eae, qual seu nome?")
 print("Prazer em te conhecer", nome, "!")
