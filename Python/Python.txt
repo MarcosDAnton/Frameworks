@@ -11,6 +11,11 @@
   enquanto trabalhava no Centro de Matemática e Informática (CWI) na Holanda
   em 1991
 
+* Extensão do Arquivo 
+  
+   .py
+
+
 * Fontes 
 
   Python.org [https://www.python.org/]
