@@ -1,25 +1,24 @@
 
+nI = float(input("Iº: "))
+nII = float(input("IIº: "))
 
-# Preciso consertar !
+# Tipo float seria o equivalente aos números reais
 
-numI = input(int("Iº: "))
-numII = input(int("IIº: "))
+print ("\n Dados os números: ", nI," e ", nII)
 
-print ("\n Dados os números: ", numI," e ", numII)
-
+# Se colocar as variáveis entre parenteses a operação é de concatenação ()
 
 # Os resultados são numéricos
 
 print ("\n\n==============================\n", "Operadores Aritméticos")
 
-
-print ("Soma: ", numI + numII)
-print ("Subtração: ", numI - numII)
-print ("Multiplicação: ", numI * numII)
-print ("Divisão: ", numI / numII)
-print ("Parte Inteira da Divisão: ", numI // numII)
-print ("Potência: ", numI ** numII)
-print ("Resto da Divisão: ", numI % numII)
+print ("Soma: ",nI + nII)
+print ("Subtração: ", nI - nII)
+print ("Multiplicação: ", nI * nII)
+print ("Divisão: ", nI / nII)
+print ("Parte Inteira da Divisão: ", nI // nII)
+print ("Potência: ", nI ** nII)
+print ("Resto da Divisão: ", nI % nII)
 
 
 
@@ -31,33 +30,40 @@ print ("Resto da Divisão: ", numI % numII)
 
 print ("\n\n=============================\n", "Operadores de Atribuitivos")
 
-print (" Implicação ", numI = numII, numII = numI) 
+print (" Implicação:\n ")
+print (nI = nII)
+print (nII = nI) 
 print ("\n")
 
+
+
+
+# Corrigir daqui para baixo......
+
 print ("Atribuição de Valor com Soma: \n")
-numI += 2
-numII += 3
+xI = (nI += nII)
+xII = (nII += nI)
 print ("\n")
 
 print ("Atribuição de Valor com Subtração: \n")
-numI += 2
-numII += 3
+nI += nII
+nII += nI
 print ("\n")
 
 print ("Atribuição de Valor com Multiplicação:\n")
-numI *= 2
-numII *= 3
+nI *= nII
+nII *= nI
 print ("\n")
 
 print ("Atribuição de Valor com Divisão:\n")
-numI /= 2
-numII /= 3
+nI /= nII
+nII /= nI
 print ("\n")
 
 
 print ("Atribuição de Walrus:\n")
-(numI := 2)
-(numII := 3)
+(nI := nII)
+(nII := nI)
 
 
 
@@ -65,16 +71,16 @@ print ("Atribuição de Walrus:\n")
 
 print ("\n\n=============================================\n", "Operadores de Comparação\n")
 
-print ("Operador de Igualdade : ", numI == numII, "ou", numII == numI)
+print ("Operador de Igualdade : ", nI == nII, "ou", nII == nI)
 print ("\n")
 
-print ("Operador de Diferença: ", numI != numII, "ou", numII != numI)
+print ("Operador de Diferença: ", nI != nII, "ou", nII != nI)
 print ("\n")
 
-print ("Operadores de Comparação: ", numI > numII, " ou ", numII < numI)
+print ("Operadores de Comparação: ", nI > nII, " ou ", nII < nI)
 print ("\n")
 
-print ("Operadores de Comparação com Igualdade: ", numI >= numII, "ou", numII <= numI)
+print ("Operadores de Comparação com Igualdade: ", nI >= nII, "ou", nII <= nI)
 print ("\n")
 
 
@@ -83,13 +89,13 @@ print ("\n")
 
 print ("\n\n==============================================\n", "Operadores Lógicos\n")
 
-print ("And: ", numI and numII, " ou ", numII and numI)
+print ("And: ", nI and nII, " ou ", nII and nI)
 print ("\n")
 
-print ("Or: ", numI or numII, "ou", numII or numI)
+print ("Or: ", nI or nII, "ou", nII or nI)
 print ("\n")
 
-print ("Not: ", not numI, "ou" ,not numII)
+print ("Not: ", not nI, "ou" ,not nII)
 print ("\n")
 
 
@@ -100,15 +106,12 @@ print ("\n")
 
 print ("\n\n================================================\n", "Operador de Identidade\n")
 
-print ("Is: ", numI is numII, "ou", numII is numI)
+print ("Is: ", nI is nII, "ou", nII is nI)
 
 
 
 
 
 # Verifica se tais valores estão pertencentes em outro como na teoria dos conjuntos com true ou false ou "Membership"
+# geralmente utilizado em condicionais
 
-print ("\n\n====================================================\n", "Operador de Pertencimento\n")
-
-print ("In: ", numI in numII, "ou", numII in numI)
-print ("\n")
