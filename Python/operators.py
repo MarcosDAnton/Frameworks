@@ -28,75 +28,67 @@ print ("Resto da Divisão: ", nI % nII)
 
 # Os resultados são true e false, incremento de valores e comparações
 
-print ("\n\n=============================\n", "Operadores de Atribuitivos")
 
-print (" Implicação:\n ")
-print (nI = nII)
-print (nII = nI) 
-print ("\n")
+#print ("\n\n=============================\n", "Operadores de Atribuitivos")
 
-
-
-
-# Corrigir daqui para baixo......
-
-print ("Atribuição de Valor com Soma: \n")
-xI = (nI += nII)
-xII = (nII += nI)
-print ("\n")
-
-print ("Atribuição de Valor com Subtração: \n")
-nI += nII
-nII += nI
-print ("\n")
-
-print ("Atribuição de Valor com Multiplicação:\n")
-nI *= nII
-nII *= nI
-print ("\n")
-
-print ("Atribuição de Valor com Divisão:\n")
-nI /= nII
-nII /= nI
-print ("\n")
+#print (" Implicação:\n ")
+#print (nI = nII)
+#print (nII = nI) 
+#print ("\n")
 
 
-print ("Atribuição de Walrus:\n")
-(nI := nII)
-(nII := nI)
+#print ("Atribuição de Valor com Subtração: \n")
+#nI += nII
+#nII += nI
+#print ("\n")
+
+#print ("Atribuição de Valor com Multiplicação:\n")
+#nI *= nII
+#nII *= nI
+#print ("\n")
+
+#print ("Atribuição de Valor com Divisão:\n")
+#nI /= nII
+#nII /= nI
+#print ("\n")
+
+
+#print ("Atribuição de Walrus:\n")
+#(nI := nII)
+#(nII := nI)
 
 
 
 # Os resultados são true ou false somente
 
-print ("\n\n=============================================\n", "Operadores de Comparação\n")
+#print ("\n\n=============================================\n", "Operadores de Comparação\n")
 
-print ("Operador de Igualdade : ", nI == nII, "ou", nII == nI)
-print ("\n")
+#print ("Operador de Igualdade : ", nI == nII, "ou", nII == nI)
+#print ("\n")
 
-print ("Operador de Diferença: ", nI != nII, "ou", nII != nI)
-print ("\n")
+#print ("Operador de Diferença: ", nI != nII, "ou", nII != nI)
+#print ("\n")
 
-print ("Operadores de Comparação: ", nI > nII, " ou ", nII < nI)
-print ("\n")
+#print ("Operadores de Comparação: ", nI > nII, " ou ", nII < nI)
+#print ("\n")
 
-print ("Operadores de Comparação com Igualdade: ", nI >= nII, "ou", nII <= nI)
-print ("\n")
+#print ("Operadores de Comparação com Igualdade: ", nI >= nII, "ou", nII <= nI)
+#print ("\n")
 
 
 
 # Os resultados são baseados nas operações entre true ou false
 
-print ("\n\n==============================================\n", "Operadores Lógicos\n")
+#print ("\n\n==============================================\n", "Operadores Lógicos\n")
 
-print ("And: ", nI and nII, " ou ", nII and nI)
-print ("\n")
+#print ("And: ", nI and nII, " ou ", nII and nI)
+#print ("\n")
 
-print ("Or: ", nI or nII, "ou", nII or nI)
-print ("\n")
+#print ("Or: ", nI or nII, "ou", nII or nI)
+#print ("\n")
 
-print ("Not: ", not nI, "ou" ,not nII)
-print ("\n")
+#print ("Not: ", not nI, "ou" ,not nII)
+#print ("\n")
 
 
 
@@ -104,9 +96,9 @@ print ("\n")
 
 # Compara se dois resultados estão inclusos um no outro como na teoria de conjuntos com true ou false
 
-print ("\n\n================================================\n", "Operador de Identidade\n")
+#print ("\n\n================================================\n", "Operador de Identidade\n")
 
-print ("Is: ", nI is nII, "ou", nII is nI)
+#print ("Is: ", nI is nII, "ou", nII is nI)
 
 
 
