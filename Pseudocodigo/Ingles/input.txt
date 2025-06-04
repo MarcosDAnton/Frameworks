@@ -7,7 +7,7 @@ int = int-number;
 character = character-pharase-or-word;
 logic = logic-true-or-false;
 
-input ("Type a Float value:", float-number);
+input ("Type a Float value:", float-number);  // or reader, read
 input ("Type a Integer value:", int-number);
 input ("Type a Text:", character-pharase-or-word);
 input ("Type a Logic value V or F: ", logic-true-or-false);

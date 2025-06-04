@@ -2,9 +2,7 @@ Input:
 
 Algorithm Output {
 
-    print ("Let's learning, Pseudocode!")
-    
-    // also know as display 
+    print ("Let's learning, Pseudocode!")  // also know as display 
 }
 
 ==============================================================================

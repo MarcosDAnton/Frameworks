@@ -1,0 +1,62 @@
+Input: 
+
+ Algorithm If {
+
+    int: int-number, comparative-number;
+    float: float-number;
+
+
+    print ("Iº If Conditional: ")
+    // fixed condition
+
+    input ("Type a integer nº ", int-number);
+
+    if (int-number > 1) {   
+        
+        // > (greather than),  < (less than),  <= (less than or equal to), >= (greather than or equal to) 
+
+        print ("This is number... ", int-number);
+    }
+
+ // --------------------------------------------------------------------------------------------------------
+
+
+    print("IIº If Conditional: ");
+    // variable conditional
+
+    input ("Type a any nº ", comparative-number);
+    input ("Type a Float nº ", float-number);
+
+     if (float-number < comparative-number) {
+
+        print("This number ", comparative-number, " is less than ", float-number);
+     }
+        if (comparative-number > float-number) {
+
+            print("This number ", comparative-number, " is greather than ", float-number);
+      }
+        if (comparative-number == float-number) {  
+            
+            // == means identical
+            
+            print("This number ",comparative-number," is equal to ", float-number, " in reverse")
+
+        }
+
+ }
+
+=========================================================================================================================
+
+Output: 
+  
+  Iº If Conditional: 
+  Type a integer nº _
+  This number is ... _  
+
+
+  IIº If Conditional:
+  Type a any nº _
+  Type a Float nº _
+  Este número é menor _ é menor que _ , Este número _ é maior que _ , 
+  Este número _ é igual a _ e vice-versa
+  

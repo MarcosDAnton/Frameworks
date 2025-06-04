@@ -1,0 +1,31 @@
+Entrada: 
+
+ Algoritmo Soma-por-Telefone {
+
+    inteiro: N, X, numeros-validos[tamanho-da-lista], i, soma, tamanho-da-lista;
+
+    soma <- 0
+    tamanho-da-lista <- 0
+
+    leia (N);
+
+    para i de 0 até N {
+
+        leia (X)
+         se (tamanho-da-lista > 0){
+            tamanho-da-lista < tamanho-da-lista - 2;
+         }
+
+          senao {
+            numeros-validos[tamanho-da-lista] = X;
+            tamanho-da-lista <- tamanho-da-lista + 2;
+          }
+    }
+
+     para i de 0 até (tamanho-da-lista - 1){
+        soma <- soma + numeros-validos[tamanho-da-lista];
+     }
+
+     escreva (soma);
+
+ }

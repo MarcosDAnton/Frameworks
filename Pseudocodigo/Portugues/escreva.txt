@@ -2,7 +2,7 @@ Entrada:
 
 Algoritmo Escreva {
 
-    escreva ("Vamo aprender, Pseudocódigo!")
+    escreva ("Vamo aprender, Pseudocódigo!")  // ou declare
 
 }
 
