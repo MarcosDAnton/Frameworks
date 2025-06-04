@@ -1,0 +1,17 @@
+* O que é?
+
+  É um método de teorizar algoritimos sem a preocupação de se a linguagem é 
+interpretada ou compilada de acordo com o idioma do desenvolvedor, com 
+certos padrões para um fácil entendimento da depuração dos códigos em qualquer outra 
+linguagem de programação ou desenvolvimento.
+
+
+* Quem fundou?
+
+  Não possui um criador específico pois é um método que foi concebido conforme 
+o uso de vários desenvolvedores no mundo e concensos.
+
+
+* Extensão do Arquivo
+
+  papel e caneta, .txt e dentre outros... 

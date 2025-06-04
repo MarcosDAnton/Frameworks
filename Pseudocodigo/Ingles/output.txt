@@ -1,0 +1,5 @@
+Algorithm Output {
+
+    output ("Let's learning, Pseudocode!")
+
+}
