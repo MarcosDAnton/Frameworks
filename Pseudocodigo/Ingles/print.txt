@@ -1,0 +1,14 @@
+Input: 
+
+Algorithm Output {
+
+    print ("Let's learning, Pseudocode!")
+    
+    // also know as display 
+}
+
+==============================================================================
+
+Output: 
+
+    Let's learning, Pseudocode!

@@ -1,0 +1,26 @@
+Input: 
+
+Algorithm Input{
+
+float = float-number;
+int = int-number;
+character = character-pharase-or-word;
+logic = logic-true-or-false;
+
+input ("Type a Float value:", float-number);
+input ("Type a Integer value:", int-number);
+input ("Type a Text:", character-pharase-or-word);
+input ("Type a Logic value V or F: ", logic-true-or-false);
+
+}
+
+
+============================================================================
+
+Saída: 
+
+  Type a Float value: _
+  Type a Integer value: _
+  Type a Text: _
+  Type a Logic value V or F: _
+

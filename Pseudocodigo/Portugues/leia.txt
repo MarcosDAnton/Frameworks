@@ -1,0 +1,26 @@
+Entrada: 
+
+Algoritmo Leia{
+
+real = real-numero;
+inteiro = inteiro-numero;
+caractere = caracter-frase-ou-palavra;
+logico = logico-verdade-ou-falso;
+
+leia ("Digite um valor Real: ", real-numero);
+leia ("Digite um valor Inteiro:", inteiro-numero);
+leia ("Digite um Texto:", caractere-frase-ou-palavra);
+leia ("Digite um valor Lógico V ou F:", logico-verdade-ou-falso);
+
+}
+
+
+============================================================================
+
+Saída: 
+
+  Digite um valor Real: _
+  Digite um valor Inteiro: _
+  Digite um Texto: _
+  Digite um valor Lógico V ou F: _
+

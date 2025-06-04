@@ -1,0 +1,28 @@
+Entrada: 
+
+Algoritmo Variaveis {
+
+real = real-numero;
+inteiro = inteiro-numero;
+caractere = caracter-frase-ou-palavra;
+logico = logico-verdade-ou-falso;
+
+real-numero <- 2.70;
+inteiro-numero <- 1;
+caractere-frase-ou-palavra <- "Este é o conceito de variáveis em Pseudocódigo";
+logico-verdade-ou-falso <- verdade;
+
+escreva (real-numero, inteiro-numero, caractere-frase-ou-palavra, logico-verdade-ou-falso);
+
+}
+
+==============================================================================================
+
+
+
+Saída: 
+
+  2.70 
+   1
+  Este é o conceito de variáveis em Pseudocódigo
+  verdade 

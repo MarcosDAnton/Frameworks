@@ -1,5 +1,13 @@
+Entrada:
+
 Algoritmo Escreva {
 
     escreva ("Vamo aprender, Pseudocódigo!")
 
 }
+
+=============================================================================
+
+Saída: 
+
+  Vamo aprender, Pseudocódigo!
