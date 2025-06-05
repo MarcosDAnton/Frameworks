@@ -1,0 +1,38 @@
+Entrada:
+
+Algoritmo Senao {
+
+    inteiro: int-numero, comparativo-numero;
+
+    comparativo-numero <- 7
+
+    leia ("Digite um nº Inteiro: ",int-numero);
+
+    se (int-numero > 7){
+
+        escreva ("O número", int-numero, " é maior que", comparativo-numero);
+
+    }
+      se (int-numero == 7){
+
+        escreva ("O número", int-numero, " é igual a ", comparativo-numero);
+
+      }
+
+       senao {
+
+        escreva ("O número", int-numero, "é menor ou não igual a", comparativo-numero);
+
+       }
+
+
+
+}
+
+
+================================================================================================
+
+Saída:
+
+ Digite um nº Inteiro: _
+ O número _  é maior que _ ,       O número _  é igual a _  ,      O número _ é menor ou não igual a _
