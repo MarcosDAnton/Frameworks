@@ -1,0 +1,28 @@
+Input:
+
+Algorithm While {
+
+    int: varI;
+
+    varI <- 0;
+
+    enquanto (varI < 10) {
+      
+      print ("Now is ", varI);
+      varI <- varI + 1;
+
+    } 
+
+
+}
+
+
+==========================================================================
+
+
+Output: 
+
+
+  Now is, _ 
+  ... until 10
+  

@@ -1,0 +1,28 @@
+Entrada:
+
+Algoritmo Enquanto {
+
+    inteiro: varI;
+
+    varI <- 0;
+
+    enquanto (varI < 10) {
+      
+      escreva ("Agora é", varI);
+      varI <- varI + 1;
+
+    } 
+
+
+}
+
+
+==========================================================================
+
+
+Saída: 
+
+
+  Agora é, _ 
+  ... até o 10
+  

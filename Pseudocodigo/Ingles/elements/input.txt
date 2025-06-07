@@ -17,7 +17,7 @@ input ("Type a Logic value V or F: ", logic-true-or-false);
 
 ============================================================================
 
-Saída: 
+Output: 
 
   Type a Float value: _
   Type a Integer value: _
