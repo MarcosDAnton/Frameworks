@@ -1,0 +1,5 @@
+Implement an algorithm that receives two integers P and Q, where P < Q. The program must: 
+
+(a) Determine the smallest prime number in the range P and Q. 
+
+(b) Calculate the product of the prime factors Q (if any)

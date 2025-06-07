@@ -1,0 +1,2 @@
+Faça um algortimo que leia os lados de um triangulo calcule a area dele. Depois imprima os 
+valores da Base, Altura, e a Area. 
