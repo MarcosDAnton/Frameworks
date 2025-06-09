@@ -1,1 +1,51 @@
 Make an algorithm that reads two numbers and performs Addition, Subtraction, Division and Multiplication.
+
+
+Faça um algoritmo que leia dois números e faça a Soma, Subtração, Divisão e Multiplicação.
+
+
+Input:
+
+
+  Algorithm Operations {
+
+    real: I, II, sum, subtraction, division, multiplication; 
+
+    print ("Operator calculator for two digits"); 
+    leia ("I:", I, "II: ", II);
+
+    sum <- I + II;  
+
+    subtraction <- I - II;
+
+    division <- I  / II;
+
+    multiplication <- I * II;
+
+    print ("Sum: ",sum);
+
+    print ("Subtraction: ",subtraction);
+
+    print ("Division: ",division);
+
+    print ("Multiplication: ", multiplication);
+
+  }
+
+======================================================================================================
+
+Saida:
+
+  Operators calculator for two digits
+  I: _
+  II: _
+  Sum: _
+  Subtraction: _
+  Division: _
+  Multiplication: _
+
+
+
+
+
+
