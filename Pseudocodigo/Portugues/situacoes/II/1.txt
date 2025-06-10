@@ -4,3 +4,19 @@ sendo P < Q. O programa deve:
 (a) Determinar o menor número primo do intervalo P e Q.
 
 (b) Calcular o produto dos fatores primos Q (se existem)
+
+
+
+Entrada: 
+
+
+ Algoritmo P-e-Q {
+
+
+    inteiro:  P, Q;
+
+    P
+
+
+
+ }

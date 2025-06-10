@@ -1,3 +1,5 @@
+Faça um algoritmo de soma por telefone, e que o chefe frequentemente erra os numeros falados no telefone 
+
 Entrada: 
 
  Algoritmo Soma-por-Telefone {

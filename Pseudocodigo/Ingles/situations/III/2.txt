@@ -1,0 +1,33 @@
+Make a sum algorithm over the phone, and the boss often gets the numbers spoken on the phone wrong
+
+Input: 
+
+ Algorithm Sum-for-Phone {
+
+    int: N, X, valid-numbers[size-list], i, sum, size-list;
+
+    sum <- 0
+    size-list <- 0
+
+    input (N);
+
+    for i of 0 until N {
+
+        print (X)
+         if (size-list > 0) {
+            size-list < size-list - 2;
+         }
+
+          ifelse {
+            valid-numbers[size-list] = X;
+            size-list <- size-list + 2;
+          }
+    }
+
+     for i of 0 until (size-list - 1){
+        sum <- sum + valid-numbers[size-list];
+     }
+
+     print (sum);
+
+ }

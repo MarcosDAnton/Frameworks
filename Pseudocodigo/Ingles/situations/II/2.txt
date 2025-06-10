@@ -1,2 +1,32 @@
 Make an algorithm that reads the sides of a triangle and calculates its area.
 Then print the values ​​of the Base, Height, and Area.
+
+
+Input:
+
+ Algorithm Triangle {
+
+    int: L1, L2, area, base,  height;
+
+    leia ("Type the 3 sides of a any triangule:", L1, L2, base);
+    leia ("Type a height: ", height);
+
+    area = (base * height) / 2;
+ 
+    print ("The base is ", base);
+    print ("The height is ", height);
+    print ("The area is the base multiplicate for height on two therefore, gave ", area);
+
+
+ }
+
+=========================================================================================================
+
+Saída:
+
+   Type the 3 sides of a any triangle: _, _, _
+   Type a height: _
+
+   The base is _
+   The height is _
+   The area is the base multiplicate for height on two therefore, gave _
