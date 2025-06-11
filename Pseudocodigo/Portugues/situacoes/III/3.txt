@@ -1,0 +1,20 @@
+Entrada:
+
+ Algoritmo Menor-Valor {
+
+   inteiro: i, vet[10], menor <- ♾️;
+   
+   para i de 0 até 9 {
+
+     leia (vet[i]);
+
+     se (vet[i] < menor) {
+
+      menor <- vet[i];
+     }
+     escreva ("Menor =", menor);
+
+    }
+  }
+
+    
