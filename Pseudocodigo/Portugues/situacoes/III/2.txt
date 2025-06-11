@@ -7,7 +7,7 @@ Algoritmo Soma-Por-Telefone {
   SOMA <- 0;
   P <- 0;
 
-  para i de 0 a 999 {
+  para i de 0 a 49 {
     leia(Valor);
 
      se (Valor > 0) {
