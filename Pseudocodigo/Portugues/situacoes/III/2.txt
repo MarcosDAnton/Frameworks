@@ -1,33 +1,24 @@
-Faça um algoritmo de soma por telefone, e que o chefe frequentemente erra os numeros falados no telefone 
+Soma por Telefone com o chefe maluco da cabeça.
 
-Entrada: 
+Algoritmo Soma-Por-Telefone {
 
- Algoritmo Soma-por-Telefone {
+  inteiro: NUM [50], SOMA, i, Valor, P;
 
-    inteiro: N, X, numeros-validos[tamanho-da-lista], i, soma, tamanho-da-lista;
+  SOMA <- 0;
+  P <- 0;
 
-    soma <- 0
-    tamanho-da-lista <- 0
+  para i de 0 a 999 {
+    leia(Valor);
 
-    leia (N);
+     se (Valor > 0) {
 
-    para i de 0 até N {
-
-        leia (X)
-         se (tamanho-da-lista > 0){
-            tamanho-da-lista < tamanho-da-lista - 2;
+       NUM [P] <- Valor; 
+       SOMA <- SOMA + Valor;
+       P <- P + 1;
+       }
+         senão se (valor == 0 e P > 0) {
+             P <- P - 1; 
+             SOMA <- SOMA - NUM [P];
          }
-
-          senao {
-            numeros-validos[tamanho-da-lista] = X;
-            tamanho-da-lista <- tamanho-da-lista + 2;
-          }
-    }
-
-     para i de 0 até (tamanho-da-lista - 1){
-        soma <- soma + numeros-validos[tamanho-da-lista];
      }
-
-     escreva (soma);
-
- }
+      escreva ("Somatório: ", SOMA);
