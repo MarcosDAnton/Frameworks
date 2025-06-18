@@ -1,0 +1,8 @@
+Registro = Endereco {
+
+  caracter: rua, cidade;
+  inteiro: cep;
+
+  leia (rua, cidade, cep);
+  
+}
