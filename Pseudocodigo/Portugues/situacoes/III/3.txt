@@ -1,20 +1,80 @@
+Instruções 
+ 
+ 1. Considere o seguinte problema do robô explorador:
+
+  Um robô explorador foi colocado em uma pista de 100 blocos consecutivos. A pista é circular,
+de modo que após o último bloco está o início da pista, e antes do início da pista está o último bloco. 
+Cada bloco da pista tem uma quantidade de energia armazenada. O robô começa no bloco 1 e pode se mover de um bloco
+para outro com base na quantidade de energia que ele consome de cada bloco.
+
+* O robô consome 1 unidade de energia do bloco i em que ele está atualmente 
+
+* Se a quantidade restante de energia no bloco atual for maior que 3, o robô 
+avança 2 blocos para frente (i+2).
+
+* Se a quantidade de energia restante for menor ou igual a 3, o robô recua 1 bloco (i-2).
+
+ Como a lista é circular, se o robô tentar avançar para além do limite ele acabará retornando para o início ou final
+da pista. O robô para de se mover se não houver energia para consumir no bloco que ele está. Escreva um algoritmo 
+que leia a quantidade inicial de energia de cada um dos 100 blocos da pista, e após simular o movimento do robô, imprima: 
+
+* O total de blocos visitados pelo robô 
+* A quantidade de energia restante em todos os blocos da pista.
+
 Entrada:
 
- Algoritmo Menor-Valor {
+Algoritmo Robo {
 
-   inteiro: i, vet[10], menor <- ♾️;
-   
-   para i de 0 até 9 {
+  inteiro: energia, bloco_atual, blocos_visitados, i;
+  vetor: pista[100], visitados[100]; // Armazena a energia de cada bloco e o Visitaods para marcar se um bloco foi visitado (inicializar com 0s)
 
-     leia (vet[i]);
-
-     se (vet[i] < menor) {
-
-      menor <- vet[i];
-     }
-     escreva ("Menor =", menor);
-
-    }
+  // --- Parte 1: Leitura da energia inicial dos blocos ---
+  para i de 0 até 99 {
+    leia (energia);
+    pista[i] <- energia;
+    visitados[i] <- 0; // Inicializa todos como não visitados
   }
 
-    
+  // --- Parte 2: Simulação do Movimento do Robô ---
+  bloco_atual <- 0; // Robô começa no bloco 1 (índice 0)
+  blocos_visitados <- 0;
+
+    // Marca o bloco atual como visitado se ainda não foi
+    se (visitados[bloco_atual] == 0) {
+        visitados[bloco_atual] <- 1;
+        blocos_visitados <- blocos_visitados + 1;
+    }
+
+    // Verifica se há energia para consumir no bloco atual
+    se (pista[bloco_atual] <= 0) {
+      escreva ("Energia Insuficiente no bloco", bloco_atual + 1, "! Robô parou.");
+      pare; 
+      // O pare serve para sair do programa e dar uma menssagem como saída
+    }
+
+    // Consome energia
+    pista[bloco_atual] <- pista[bloco_atual] - 1;
+
+    // Determina o próximo movimento com lógica circular
+    se (pista[bloco_atual] > 3) { // Atenção: a regra usa a energia *restante* após consumo
+      bloco_atual <- (bloco_atual + 2) % 100; // Avança 2, com circularidade
+    } senao { // energia_restante <= 3
+      bloco_atual <- (bloco_atual - 1 + 100) % 100; // Recua 1, com circularidade (garante positivo)
+    }
+
+  // --- Parte 3: Cálculo e Impressão dos Resultados Finais ---
+  escreva ("O total de blocos visitados foi:", blocos_visitados);
+
+  inteiro: energia_total_restante;
+  energia_total_restante <- 0;
+  para i de 0 até 99 {
+    energia_total_restante <- energia_total_restante + pista[i];
+  }
+  escreva ("A energia restante total em todos os blocos foi:", energia_total_restante);
+
+  // Para imprimir a energia restante de cada bloco individualmente
+  escreva ("Energia restante em cada bloco:");
+  para i de 0 até 99 {
+    escreva ("Bloco", i + 1, ":", pista[i]);
+  }
+}

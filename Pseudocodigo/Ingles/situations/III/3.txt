@@ -1,0 +1,90 @@
+Instructions
+
+1. Consider the following explorer robot problem:
+
+A explorer robot has been placed on a track of 100 consecutive blocks. The track is circular,
+so that after the last block is the beginning of the track, and before the beginning of the track is the last block.
+
+Each block on the track has a stored amount of energy. The robot starts at block 1 and can move from one block to the next based on the amount of energy it consumes from each block.
+
+* The robot consumes 1 unit of energy from block i that it is currently on
+
+* If the remaining amount of energy in the current block is greater than 3, the robot
+
+advances 2 blocks forward (i+2).
+
+* If the remaining amount of energy is less than or equal to 3, the robot
+
+retreats 1 block (i-2).
+
+Since the list is circular, if the robot tries to advance beyond the limit, it will end up back at the beginning or end of the track. The robot stops moving if there is no energy to consume in the block it is on. Write an algorithm that reads the initial amount of energy from each of the 100 blocks on the track, and after simulating the robot's movement, prints: 
+
+* The total number of blocks visited by the robot 
+
+* The amount of energy remaining in all blocks on the track. 
+
+
+
+
+
+Input:
+
+
+Algorithm Robot {
+
+  integer: energy, current_block, visited_blocks, i;
+  array: track[100], visited[100]; // Store the energy of each block and the Visited to mark if a block was visited (initialize with 0s)
+
+// --- Part 1: Reading the initial energy of the blocks ---
+for i from 0 to 99 {
+read (energy);
+track[i] <- energy;
+visited[i] <- 0; // Initialize all as unvisited
+}
+
+// --- Part 2: Robot Movement Simulation ---
+current_block <- 0; // Robot starts at block 1 (index 0)
+visited_blocks <- 0;
+
+// Mark the current block as visited if it has not been visited yet
+if (visited[current_block] == 0) {
+visited[current_block] <- 1; visited_blocks <- visited_blocks + 1;
+}
+
+// Check if there is energy to consume in the current block
+if (track[current_block] <= 0) {
+write ("Insufficient energy in the block", current_block + 1, "! Robot stopped.");
+stop; 
+// The stop is used to exit the program and output a message
+} 
+  // Consumes energy
+track[current_block] <- track[current_block] - 1;
+
+// Determines the next move with circular logic
+if (track[current_block] > 3) { // Warning: the rule uses the *remaining* energy after consumption
+current_block <- (current_block + 2) % 100; // Moves forward 2, with circularity
+} else { // remaining_energy <= 3
+current_block <- (current_block - 1 + 100) % 100; // Moves back 1, with circularity (guarantees positive)
+}
+
+// --- Part 3: Calculation and Printing of Final Results ---
+write ("The total number of blocks visited was:", blocks_visited);
+
+integer: total_energy_remaining;
+total_energy_remaining <- 0; for i from 0 to 99 {
+total_energy_remaining <- total_energy_remaining + track[i];
+}
+print ("The total remaining energy in all blocks was:", total_energy_remaining);
+
+// To print the remaining energy of each block individually
+print ("Remaining energy in each block:");
+for i from 0 to 99 {
+print ("Block", i + 1, ":", track[i]);
+  }
+}
+
+========================================================================================================
+
+Output:
+
+  Remaining energy in each block: Block _ into 99 : _ ... into 99

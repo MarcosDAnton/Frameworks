@@ -20,37 +20,47 @@ Seu chefe fala ao telefone "Um, três, cinco, quatro, zero, zero, sete, zero, ze
    "zero, zero"                   1                                                     Ignore os 2 últimos números
    "seis"                         1,6                                                   Registre 6 ao final da lista
 
+Para ajudar seu chefe, escreva um programa que determine a soma total dos números falados por ele ao final do telefonema.
+
+
+
 
 Entrada:
 
 Algoritmo Soma-Por-Telefone {
 
-  inteiro: NUM [50], SOMA, i, Valor, P;
+  inteiro: N, X, num-validos[i], i, soma, tamanho-da-lista[i]
 
-  SOMA <- 0;
-  P <- 0;
+  soma <- 0; 
+  tamanho-da-lista <- 0;
 
-  para i de 0 a 49 {
-    leia(Valor);
+  leia (N);
 
-     se (Valor > 0) {
+  para i de 0 até N {
 
-       NUM [P] <- Valor; 
-       SOMA <- SOMA + Valor;
-       P <- P + 1;
-       }
-         senão se (valor == 0 e P > 0) {
-             P <- P - 1; 
-             SOMA <- SOMA - NUM [P];
-         }
-     }
-      escreva ("Somatório: ", SOMA);
+    leia (X);
+    se (X == 0) {
+      
+      se (tamanho-da-lista > 0) {
+        tamanho-da-lista <- tamanho-da-lista - 1
+      }
 
+      senão {
+        num-validos[tam-da-lista] = X;
+        tam-da-lista <- tam-da-lista + 1;
+      }
+    }
+
+      para i de 0 até (tam-da-lista-1) {
+        soma <- soma + num-validos[i];
+      }
+  }
+
+  escreva ("Somatório dos Números: ", soma);
 }
-
 
 ================================================
 
 Saída:
 
-  Somatório, _ 
+  Somatório dos Números: _ 

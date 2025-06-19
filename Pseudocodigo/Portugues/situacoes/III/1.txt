@@ -1,2 +1,10 @@
-Faca um algoritmo que leia o nome e a idade de um aluno, depois leia as suas 4 notas 
+Faça um algoritmo que leia o nome e a idade de um aluno, depois leia as suas 4 notas 
 bimestrais e em seguida, imprima o nome, idade, e as notas e a media anual.
+
+Entrada: 
+
+ Algoritmo Estudante {
+
+    
+
+ }
