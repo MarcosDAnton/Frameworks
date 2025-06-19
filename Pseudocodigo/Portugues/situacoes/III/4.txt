@@ -1,0 +1,24 @@
+Instruções 
+ 
+ 1. Considere o seguinte problema do robô explorador:
+
+  Um robô explorador foi colocado em uma pista de 100 blocos consecutivos. A pista é circular,
+de modo que após o último bloco está o início da pista, e antes do início da pista está o último bloco. 
+Cada bloco da pista tem uma quantidade de energia armazenada. O robô começa no bloco 1 e pode se mover de um bloco
+para outro com base na quantidade de energia que ele consome de cada bloco.
+
+* O robô consome 1 unidade de energia do bloco i em que ele está atualmente 
+
+* Se a quantidade restante de energia no bloco atual for maior que 3, o robô 
+avança 2 blocos para frente (i+2).
+
+* Se a quantidade de energia restante for menor ou igual a 3, o robô recua 1 bloco (i-2).
+
+ Como a lista é circular, se o robô tentar avançar para além do limite ele acabará retornando para o início ou final
+da pista. O robô para de se mover se não houver energia para consumir no bloco que ele está. Escreva um algoritmo 
+que leia a quantidade inicial de energia de cada um dos 100 blocos da pista, e após simular o movimento do robô, imprima: 
+
+* O total de blocos visitados pelo robô 
+* A quantidade de energia restante em todos os blocos da pista.
+
+

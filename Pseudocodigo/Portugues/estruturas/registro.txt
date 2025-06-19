@@ -6,3 +6,5 @@ Registro = Endereco {
   leia (rua, cidade, cep);
   
 }
+
+// Isto pode ser inserido dentro de um algoritmo específico!

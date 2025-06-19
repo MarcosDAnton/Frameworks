@@ -1,0 +1,10 @@
+Log = Address {
+
+  caracter: street, city;
+  int: zip;
+
+  input (street, city, zip);
+  
+}
+
+// This can be inserted into a specific algorithm!
